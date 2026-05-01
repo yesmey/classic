@@ -47,7 +47,7 @@ func (druid *Druid) newStarfireSpellConfig(rank int) core.SpellConfig {
 		Rank:          rank,
 
 		ManaCost: core.ManaCostOptions{
-			FlatCost: manaCost * (1 - 0.03*float64(druid.Talents.Moonglow)),
+			FlatCost: manaCost,
 		},
 		Cast: core.CastConfig{
 			DefaultCast: core.Cast{
